@@ -1,4 +1,4 @@
-package com.arnamanchi.FirstSpringApp;
+package com.naman.FirstSpringApp;
 
 import org.springframework.web.bind.annotation.*;
 import com.naman.FirstSpringApp.User;
@@ -20,6 +20,10 @@ public class HelloRestController {
     @PostMapping("/post")
     public String sayHello(@RequestBody User user) {
         return "Hello " + user.getFirstName() + " " + user.getLastName() + "!";
+    }
+    @PutMapping("/put/{firstName}")
+    public String sayHello(@PathVariable String firstName, @RequestParam(value = "lastName") String lastName) {
+        return "Hello " + firstName + " " + lastName + "!";
     }
 
 }
