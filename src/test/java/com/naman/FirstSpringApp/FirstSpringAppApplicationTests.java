@@ -1,4 +1,4 @@
-package com.archi.FirstSpringApp;
+package com.naman.FirstSpringApp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

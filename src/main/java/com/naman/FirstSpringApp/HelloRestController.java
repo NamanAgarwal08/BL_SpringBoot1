@@ -1,11 +1,12 @@
-package com.archi.FirstSpringApp;
+package com.naman.FirstSpringApp;
 
 import org.springframework.web.bind.annotation.*;
-import com.archi.FirstSpringApp.User;
+import com.naman.FirstSpringApp.User;
+
 @RestController
 @RequestMapping("/hello")
 public class HelloRestController {
-    @RequestMapping(value = {"", "/", "/home"})
+    @RequestMapping(value = { "", "/", "/home" })
     public String sayHello() {
         return "Hello from BridgeLabz!";
     }
