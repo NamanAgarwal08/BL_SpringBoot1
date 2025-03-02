@@ -1,4 +1,4 @@
-package com.archi.FirstSpringApp;
+package com.naman.FirstSpringApp;
 
 public class User {
     private String firstName;
